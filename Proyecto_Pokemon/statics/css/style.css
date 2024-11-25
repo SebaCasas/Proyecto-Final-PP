@@ -1,0 +1,42 @@
+.stat-bar {
+    background-color: #eee;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-fill {
+    height: 100%;
+    background-color: #4CAF50;
+    width: 0%;
+    position: relative;
+    transition: width 0.3s ease;
+}
+
+.stat-bar:hover .stat-fill {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.stat-bar:hover .tooltip {
+    display: block; /* Mostrar el tooltip */
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    top: -25px; /* Posiciona el tooltip encima de la barra */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: 10;
+    pointer-events: none; /* Evita interferencias con el ratón */
+}

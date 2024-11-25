@@ -1,0 +1,39 @@
+
+Proyecto Pokémon: 
+Una Pokédex Interactiva con Estadísticas
+Este proyecto crea una aplicación web interactiva que te permite explorar el mundo de los Pokémon. Puedes navegar por una Pokédex, filtrar Pokémon por sus características, y visualizar estadísticas interesantes sobre la distribución de tipos y los Pokémon con mejores stats.
+
+Características:
+     Pokédex:
+         -Busca Pokémon por nombre.
+         -Filtra Pokémon por tipo, generación, si es legendario, HP mínimo, ataque mínimo.
+         -Visualiza las stats de cada Pokémon con barras de progreso.
+     Estadísticas:
+         -Gráfico de barras que muestra la distribución de Pokémon por tipo.
+         -Gráficos de barras horizontales que muestran los 10 Pokémon con más HP, ataque y defensa.
+     Cómo usar:
+          Instalar dependencias: pip install Flask flask-cors plotly pandas numpy seaborn matplotlib pyDatalog
+          
+Ejecutar la aplicación:
+      python main.py
+      
+      Abrir la aplicación web en tu navegador: La aplicación estará disponible en http://localhost:5000/.
+
+Estructura del proyecto:
+      Proyecto_Pokemon/: Carpeta principal del proyecto.
+      
+      main.py: Archivo principal que ejecuta la aplicación Flask.
+      
+      templates/: Carpeta que contiene las plantillas HTML.
+      
+      index.html: Plantilla principal de la aplicación web.
+      
+      statics/: Carpeta que contiene archivos estáticos como CSS y JavaScript.
+      
+      js/: Carpeta que contiene archivos JavaScript.
+      
+      charts.js: Archivo que maneja la creación de gráficos.
+      
+      pokemon_class.py: Archivo que contiene la clase PokemonCollection para manejar la colección de Pokémon.
+      
+      Pokemon.csv: Archivo CSV que contiene la información sobre los Pokémon.
